@@ -6,12 +6,13 @@ from __future__ import print_function, absolute_import
 
 import os
 
-__version__ = '3.6.36'
+__version__ = '3.7.0'
 
 # Default settings, may be changed in a settings YAML file.
 settings = dict(
     ROOT_DIR=os.path.dirname(__file__),
     BASE_URL='http://localhost/',
+    BASE_URL_PATH_PREFIX=None,
     TORNADO_DEBUG=False,
     LOGGING_DEBUG=False,
     LOGGING_FORMAT='%(levelname)s [%(asctime)s] %(message)s',
@@ -23,6 +24,8 @@ settings = dict(
     SITE_DIR='{ROOT_DIR}/site',
     SITE_NAME='OrderPortal',
     SITE_FAVICON='orderportal32.png',
+    SITE_NAVBAR_ICON='orderportal32.png',
+    SITE_HOME_ICON='orderportal144.png',
     SITE_HOST_ICON=None,
     SITE_HOST_TITLE=None,
     SITE_HOST_URL=None,
